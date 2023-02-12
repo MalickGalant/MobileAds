@@ -16,7 +16,7 @@
        specific language governing permissions and limitations
        under the License.
 */
-package com.github.malickgalant.app;
+package com.github.malickgalant.mobileads.app;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
