@@ -1,0 +1,54 @@
+{
+  "name": "Splashscreen",
+  "version": "7.0.0-dev",
+  "description": "Splashscreen",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "splashscreen",
+    "platforms": [
+      "browser"
+    ]
+  },
+  "repository": "github:MalickGalant/MobileAds",
+  "bugs": "https://github.com/MalickGalant/MobileAds/issues",
+  "keywords": [
+    "cordova",
+    "splashscreen",
+    "ecosystem:cordova",
+    "cordova-browser"
+  ],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova-android": ">=3.6.0"
+      },
+      ">=4.0.0": {
+        "cordova-android": ">=3.6.0",
+        "cordova-windows": ">=4.4.0"
+      },
+      "<6.0.0": {
+        "cordova-ios": "<6.0.0"
+      },
+      "6.0.2": {
+        "cordova-android": ">=3.6.0 <11.0.0",
+        "cordova-windows": ">=4.4.0"
+      },
+      "<7.0.0": {
+        "cordova-android": ">=3.6.0 <11.0.0",
+        "cordova-windows": ">=4.4.0"
+      },
+      "8.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "author": "Apache Software",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@cordova/eslint-config": "^3.0.0"
+  }
+}
