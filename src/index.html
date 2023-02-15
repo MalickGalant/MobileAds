@@ -1,37 +1,51 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Ionic App</title>
-
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <meta name="theme-color" content="#387ef5">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <base href="/">
-
-  <link rel="icon" type="image/x-icon" href="assets/img/appicon.png">
-
-  <link rel="apple-touch-icon" href="assets/img/appicon.png">
-
-  <link rel="manifest" href="manifest.json">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.size" content="width={{width}}, height={{height}}">
+    <title>Ad Banner: {{width}}x{{height}}</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>var clickTag = 'https://www.google.com/';</script>
 </head>
 
 <body>
+<div id="ad">
+    <!-- remove all ".temp" <strong> tags when you begin banner production -->
+    <button id="clickthrough-button" class="btn-overlay"></button>
+    <div class="banner" style="display:none">
+        <div class="frame" id="frame1">
+            <div class="frame1-text">
+                <strong class="temp" style="font-size:60px;">3</strong>
+            </div>
+        </div>
+        <div class="frame" id="frame2">
+            <div class="frame2-text">
+                <strong class="temp" style="font-size:60px;">2</strong>
+            </div>
+        </div>
+        <div class="frame" id="frame3">
+            <div class="frame3-text">
+                <strong class="temp" style="font-size:60px;">1</strong>
+            </div>
+        </div>
+        <div class="frame" id="frame4">
+            <div class="frame4-text">
+                <strong class="temp" style="font-size:60px;">Go!</strong>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ad-overlay">
+    <div class="replay-btn">
+        <img src="assets/img/replayBtn/replay.svg" alt="replay">
+    </div>
+</div>
 
-  <app-root></app-root>
-
-  <!-- Replace the API key with your own, see:
-    https://developers.google.com/maps/documentation/javascript/get-api-key -->
-  <!-- <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pf6ZdFQj5qw7rc_HSGrhUwQKfIe9ICw"></script> -->
-
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js"></script>
+<!-- {inject:ad-platform-lib-url} -->
+<script src="assets/js/script.js"></script>
+<!-- {inject:banner-controls} -->
 </body>
-
 </html>
